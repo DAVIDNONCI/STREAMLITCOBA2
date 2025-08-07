@@ -1,6 +1,5 @@
 # app.py
 import streamlit as st
-import joblib
 import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.ensemble import RandomForestClassifier
@@ -47,4 +46,5 @@ if st.button('Prediksi'):
     # Tambahkan visualisasi (opsional)
 
     st.bar_chart(model.predict_proba(input_data)[0])
+
 
