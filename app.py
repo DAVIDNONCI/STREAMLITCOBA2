@@ -26,4 +26,5 @@ if st.button('Prediksi'):
     st.subheader(f'Hasil Prediksi: {species[prediction[0]]}')
     
     # Tambahkan visualisasi (opsional)
+
     st.bar_chart(model.predict_proba(input_data)[0])
